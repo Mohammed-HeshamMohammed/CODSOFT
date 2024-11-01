@@ -24,7 +24,7 @@ def generate_password(length, use_uppercase, use_lowercase, use_digits, use_spec
 
 # function to check for affirmative responses & user typo mistakes
 def is_yes(response):
-    return response.lower() in ['yes', 'y', 'ye', 'ys', 'es', 'yeah', 'yep', 'yess']
+    return response.lower() in ['yes', 'y', 'ye', 'ys', 'es', 'yeah', 'yep', 'yess','1']
 
 while True:
     # Getting user input password length
