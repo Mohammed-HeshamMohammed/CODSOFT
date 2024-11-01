@@ -50,6 +50,6 @@ while True:
     another_operation = input("\nWould you like to perform another operation? (yes/no): ").lower()  # To ensure that the answer is consistent
 
     # Simple string matching for variations of 'yes'
-    if another_operation not in ('yes', 'y', 'ye', 'ys', 'es', 'yeah', 'yep','yess'):
+    if another_operation not in ('yes', 'y', 'ye', 'ys', 'es', 'yeah', 'yep','yess','1'):
         print("Goodbye~Then!")
         break
