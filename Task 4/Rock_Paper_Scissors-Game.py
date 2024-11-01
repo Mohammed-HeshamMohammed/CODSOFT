@@ -30,9 +30,9 @@ def game(us_ch):
     return pc_ch  # Return pc's choice for display
 
 def normalizeinginputs(us_ch):
-    """
-    Normalize user inputs to match expected typos
-    """
+
+    #Normalize user inputs to match expected typos
+
     us_ch = us_ch.lower().strip()
     choices = {
         "rock": ["rock", "roc", "r", "rok", "rocks", '1'],
@@ -49,7 +49,7 @@ def display_choice(choice, mirror=False):
     """
     Return ASCII art for the given choice.
     for fun :D
-    If mirror=True, return the mirrored version for the computer.
+    If mirror=True, returns the mirrored version for the PC.
     """
     if choice == "rock":
         if mirror:
@@ -139,7 +139,7 @@ while True:
 
     # Ask if user wants to play again
     play_again = input("\nDo you want to play again? (yes/no): ").lower()
-    if play_again not in ('yes', 'y', 'ye', 'ys', 'es', 'yeah', 'yep', 'yess'):
+    if play_again not in ('yes', 'y', 'ye', 'ys', 'es', 'yeah', 'yep', 'yess','1'):
         break  # Exit the game loop if user does not want to play again
 
 print("Thank you for playing! :D")
